@@ -27,7 +27,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!--swagger 配置-->
+        <!--swagger 配置 配置要改成2.9.2的版本-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
