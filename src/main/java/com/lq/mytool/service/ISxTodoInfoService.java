@@ -3,6 +3,8 @@ package com.lq.mytool.service;
 import com.lq.mytool.entity.SxTodoInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  * 待办事项 服务类
@@ -13,4 +15,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ISxTodoInfoService extends IService<SxTodoInfo> {
 
+    List<SxTodoInfo> selectList();
 }

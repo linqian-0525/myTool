@@ -3,6 +3,8 @@ package com.lq.mytool.mapper;
 import com.lq.mytool.entity.SxTodoInfo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
+import java.util.List;
+
 /**
  * <p>
  * 待办事项 Mapper 接口
@@ -13,4 +15,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface SxTodoInfoMapper extends BaseMapper<SxTodoInfo> {
 
+    List<SxTodoInfo> todoInfoList();
 }
