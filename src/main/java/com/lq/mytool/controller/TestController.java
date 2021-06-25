@@ -1,5 +1,6 @@
 package com.lq.mytool.controller;
 
+import com.lq.mytool.common.BaseResponse;
 import com.lq.mytool.entity.SxTodoInfo;
 import com.lq.mytool.service.ISxTodoInfoService;
 import io.swagger.annotations.ApiOperation;
@@ -20,8 +21,8 @@ public class TestController {
 
     @ApiOperation("测试接口")
     @RequestMapping(value = "/ok" ,method = RequestMethod.GET)
-    public List<SxTodoInfo> test(){
+    public BaseResponse<List<SxTodoInfo>> test(){
         log.info("Ceshi占位符：{}","LQ");
-        return iSxIndustryService.selectList();
+        return BaseResponse.success(iSxIndustryService.selectList());
     }
 }
